@@ -17,15 +17,11 @@ export async function POST(request: Request) {
             );
         }
 
-        // Send the email
-        // IMPORTANT: 'from' must be a verified domain or the default Resend testing email
-        // 'to' should be your admin email
         const data = await resend.emails.send({
-            from: 'onboarding@resend.dev', // Use this for testing if you don't have a domain yet
-            to: process.env.ADMIN_EMAIL || 'delivered@resend.dev', // Default/fallback for safety
+            from: 'onboarding@resend.dev',
+            to: process.env.ADMIN_EMAIL || 'delivered@resend.dev',
             subject: `New Contact Form Submission from ${email}`,
             text: `You have received a new message from the contact form:\n\nFrom: ${email}\n\nMessage:\n${message}`,
-            // html: `<p>You have received a new message from the contact form:</p><p><strong>From:</strong> ${email}</p><p><strong>Message:</strong><br/>${message.replace(/\n/g, '<br/>')}</p>`,
         });
 
         return NextResponse.json(data);
