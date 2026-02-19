@@ -27,14 +27,7 @@ export default function AboutHero() {
                         />
                     </div>
 
-                    {/* <p
-                        className="text-gray-500 text-lg leading-relaxed max-w-md mt-4"
-                        style={{ fontFamily: '"Mona Sans", sans-serif' }}
-                    >
-                        Elmako Farm and Food Processing Ltd was founded with a commitment to
-                        produce and supply fresh, nutritious, and ethically grown products
-                        while supporting local economies and protecting the environment.
-                    </p> */}
+
                 </div>
 
                 {/* Right Column */}

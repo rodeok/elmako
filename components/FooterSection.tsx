@@ -26,7 +26,7 @@ export default function FooterSection() {
             {/* Bottom Credit */}
             <div className="w-full bg-[#061c14] pb-4">
                 <p className={`${gestyRatio.className} text-xs text-gray-400 text-center`}>
-                    Build by I.C.E
+                    Built by I.C.E
                 </p>
             </div>
         </section>
