@@ -71,7 +71,7 @@ export default function Navbar() {
         {/* Contact Button (Desktop) */}
         <div className="hidden lg:block">
           <Link
-            href="/contact"
+            href="/help"
             className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-6 py-2 rounded-full transition"
           >
             CONTACT
@@ -97,7 +97,7 @@ export default function Navbar() {
               ))}
             </nav>
             <Link
-              href="/contact"
+              href="/help"
               onClick={() => setIsMenuOpen(false)}
               className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-6 py-3 rounded-full transition w-full text-center"
             >

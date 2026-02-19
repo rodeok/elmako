@@ -1,6 +1,6 @@
 import Image from "next/image";
 import localFont from 'next/font/local';
-
+import Link from "next/link"
 const gestyRatio = localFont({
     src: '../public/fonts/Gesty-Ratio-DEMO-VERSION-BF6943b84de61fa-Exfont6bf8.otf',
     display: 'swap',
@@ -56,11 +56,16 @@ export default function Hero() {
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 w-full sm:w-auto px-4 sm:px-0">
                     <button className="bg-[#22c55e] hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-lg transition w-full sm:w-auto">
-                        Contact Us
+                        <Link href="/help">
+                            Contact Us
+                        </Link>
+
                     </button>
 
                     <button className="bg-[#e6f8ef] text-[#22c55e] font-semibold px-8 py-3 rounded-lg hover:bg-[#d1fae5] transition w-full sm:w-auto">
-                        About Us
+                        <Link href="/about">
+                            About Us
+                        </Link>
                     </button>
                 </div>
 

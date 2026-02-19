@@ -1,6 +1,6 @@
 import Image from "next/image";
 import localFont from 'next/font/local';
-
+import Link from "next/link"
 const gestyRatio = localFont({
     src: '../public/fonts/Gesty-Ratio-DEMO-VERSION-BF6943b84de61fa-Exfont6bf8.otf',
     display: 'swap',
@@ -37,7 +37,9 @@ export default function PartnerSection() {
                     </button>
 
                     <button className="bg-green-600 text-white font-medium px-8 py-3 rounded-lg hover:bg-green-700 transition">
-                        Apply as a Distributor
+                        <Link href="/distributon">
+                            Apply as a Distributor
+                        </Link>
                     </button>
                 </div>
 

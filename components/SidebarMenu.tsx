@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
-
+import Link from "next/link"
 export default function SidebarMenu() {
     return (
         <div className="w-full lg:w-[280px] flex flex-col justify-between">
@@ -18,17 +18,17 @@ export default function SidebarMenu() {
                     className="space-y-6 text-sm font-bold text-[#e2e8c0] tracking-wide"
                     style={{ fontFamily: '"Mona Sans", sans-serif' }}
                 >
-                    <li className="hover:text-white cursor-pointer transition-colors">HOME</li>
-                    <li className="hover:text-white cursor-pointer transition-colors">ABOUT US</li>
-                    <li className="hover:text-white cursor-pointer transition-colors">SELLS/SHOP</li>
+                    <li className="hover:text-white cursor-pointer transition-colors"> <Link href="/">HOME</Link></li>
+                    <li className="hover:text-white cursor-pointer transition-colors"> <Link href="/about">ABOUT US</Link></li>
+                    <li className="hover:text-white cursor-pointer transition-colors"> <Link href="/shop">SELLS/SHOP</Link></li>
                     <li className="hover:text-white cursor-pointer transition-colors">
-                        DISTRIBUTION APPLICATION
+                        <Link href="/distribution">DISTRIBUTION APPLICATION</Link>
                     </li>
-                    <li className="hover:text-white cursor-pointer transition-colors">HELP</li>
+                    <li className="hover:text-white cursor-pointer transition-colors"> <Link href="/help">HELP</Link></li>
                     <li className="hover:text-white cursor-pointer transition-colors">
-                        OTHER RESOURCES
+                        <Link href="">OTHER RESOURCES</Link>
                     </li>
-                    <li className="hover:text-white cursor-pointer transition-colors">CONTACT</li>
+                    <li className="hover:text-white cursor-pointer transition-colors"> <Link href="/help">CONTACT</Link></li>
                 </ul>
             </div>
 
